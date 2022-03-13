@@ -4,6 +4,10 @@
     border: none;
 }
 
+body {
+    color:#fff !important; 
+    background-color:#6ec071 !important
+}
 
 /* header and navigation */
 
