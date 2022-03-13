@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Domine:wght@500&display=swap');
+
+
 * {
     margin: 0;
     padding: 0;
@@ -5,41 +8,120 @@
 }
 
 body {
+    font-family: 'Domine', Arial, Helvetica, sans-serif;
     color:#fff !important; 
     background-color:#6ec071 !important
+}
+
+h1, h2 {
+    font-family: 'Alfa Slab One', Arial, Helvetica, sans-serif;
+}
+
+
+
+/* logo */
+
+#logo {
+    font-family: 'Alfa Slab One', Arial, Helvetica, sans-serif;
+    font-size: 2.0em;
+    letter-spacing: 3px;
+    text-shadow: 5px 5px 8px black;
+    text-align: center;
+    left: 50%;
+    padding-top: 20px;
+    margin: auto;
+    text-decoration: underline;
 }
 
 /* header and navigation */
 
 #header {
     width: 100%;
-    height: 150px;
-    background-color:#265728;
+    height: 175px;
+    background-image: url("../images/grass-background.jpg");;
     position: fixed;
 }
 
-#home-button {
-    background-color: beige;
-    width: 10%;
-    height: 100%;
-    position: left;
+
+
+
+
+
+#nav-bar {
+    font-weight: bold;
+    font-size: 1.5em;
     text-align: center;
+    position: fixed;
+    display: flex;
+    width: 100%;
+    background-color: black;
+    
+}
+
+#nav-bar li {
+    height: 30px;
+    border: 2px solid white;
+    contain: content;
+    list-style-type: none;
+    display: inline;
+    width: 25%;
+    margin:0;
+    padding:10px;
+    
+}
+
+li a:visited { text-decoration: none; 
+               ;
+}
+
+
+a { color: white; 
+}
+
+
+.div-2 {
+    background-color:#265728;
+}
+
+h4 {
+    font-size: 12em;
+}
+
+/* For larger to medium screens size from 1200px wide and down */
+@media screen and (max-width: 1200px) {
+
+    #header {
+        height: 100px;
+    }
+
+    #nav-bar li {
+        border: 1px solid white;
+        padding: 5px;
+        font-size: medium;
+        contain: content;
+    }
 
 }
 
-#main-title{
-    height: 50%;
-    width: 90%;
-    position: absolute;
-    top: 0%;
-    left: 10%;
-    text-align: center;
-    background-color: red;
 
-}
 
-.nav-links {
-    background-color: blue;
-    display: inline-block;
-}
+/* for medium screen sizes from 950px wide and down */
 
+@media screen and (max-width: 950px) {
+    #header { 
+        height: 125px;
+    }
+    
+    
+    }
+
+    #nav-bar {
+        font-size: 1.0rem;
+    }
+
+    #nav-bar li {
+        border: 1px solid white;
+        padding: 10px;
+    }
+
+    }
