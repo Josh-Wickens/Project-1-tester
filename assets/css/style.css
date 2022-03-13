@@ -14,7 +14,8 @@ body {
 #header {
     width: 100%;
     height: 150px;
-    background-color:#265728
+    background-color:#265728;
+    position: fixed;
 }
 
 #home-button {
@@ -22,11 +23,17 @@ body {
     width: 10%;
     height: 100%;
     position: left;
-    text-align: center, middle;
+    text-align: center;
 
 }
 
 #main-title{
+    height: 50%;
+    width: 90%;
+    position: absolute;
+    top: 0%;
+    left: 10%;
+    text-align: center;
     background-color: red;
 
 }
@@ -35,3 +42,4 @@ body {
     background-color: blue;
     display: inline-block;
 }
+
