@@ -19,7 +19,10 @@ body {
 
 #home-button {
     background-color: beige;
-    position: fixed, left;
+    width: 10%;
+    height: 100%;
+    position: left;
+    text-align: center, middle;
 
 }
 
